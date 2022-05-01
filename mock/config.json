@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "vue3-cnode",
+      "entry": "http://localhost:8080",
+      "activeRule": "/#/vue3-cnode"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/vue3-cnode",
+      "microApp": "vue3-cnode"
+    }
+  ]
+}

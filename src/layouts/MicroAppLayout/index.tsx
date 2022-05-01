@@ -1,5 +1,5 @@
 import MicroAppLoader from '@/.umi/plugin-qiankun/MicroAppLoader';
-import useEventBus from '@/utils/event-bus';
+import useEventBus from '@/utils/eventBus';
 import { FunctionComponent, useState } from 'react';
 import { MicroApp } from 'umi';
 

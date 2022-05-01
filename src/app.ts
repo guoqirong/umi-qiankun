@@ -1,5 +1,5 @@
 import { dynamic } from 'umi';
-import useEventBus from './utils/event-bus';
+import useEventBus from './utils/eventBus';
 
 interface extraRoutesType {
   path: string;
@@ -9,7 +9,11 @@ interface extraRoutesType {
 let extraRoutes: extraRoutesType[] = [];
 const [event] = useEventBus();
 
-export const qiankun = fetch('/config')
+export const qiankun = fetch(
+  process.env.NODE_ENV === 'production'
+    ? '/umi-qiankun/config.json'
+    : 'config.json',
+)
   .then((res) => {
     return res.json();
   })
@@ -49,7 +53,7 @@ export const qiankun = fetch('/config')
 export function patchRoutes({ routes }: { routes: any }) {
   extraRoutes.forEach((element) => {
     routes[0].routes.push({
-      // name: element.name,
+      name: element.microApp,
       // icon: 'smile',
       path: element.path,
       microApp: element.microApp,
@@ -58,11 +62,14 @@ export function patchRoutes({ routes }: { routes: any }) {
       }),
     });
   });
-  console.log(routes);
 }
 
 export async function render(oldRender: () => void) {
-  fetch('/config')
+  fetch(
+    process.env.NODE_ENV === 'production'
+      ? '/umi-qiankun/config.json'
+      : 'config.json',
+  )
     .then((res) => {
       return res.json();
     })
