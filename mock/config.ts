@@ -11,6 +11,16 @@ export default {
         entry: 'https://guoqirong.github.io/umi-cnode/',
         activeRule: '/#/umi-cnode', // hash路由需配置
       },
+      {
+        name: 'react-cnode',
+        entry: 'https://guoqirong.github.io/react-cnode/',
+        activeRule: '/#/react-cnode', // hash路由需配置
+      },
+      {
+        name: 'vue2-cnode',
+        entry: 'https://guoqirong.github.io/vue2-cnode/',
+        activeRule: '/#/vue2-cnode', // hash路由需配置
+      },
     ],
     routes: [
       {
@@ -20,6 +30,14 @@ export default {
       {
         path: '/umi-cnode',
         microApp: 'umi-cnode',
+      },
+      {
+        path: '/react-cnode',
+        microApp: 'react-cnode',
+      },
+      {
+        path: '/vue2-cnode',
+        microApp: 'vue2-cnode',
       },
     ],
   },
