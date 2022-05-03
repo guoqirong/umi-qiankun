@@ -35,9 +35,9 @@ export const qiankun = fetch(
         // beforeMount: (props: any) => {
         //   console.log(props);
         // },
-        afterMount: (props: any) => {
+        afterMount: () => {
           event.emit('qiankun-child-loading', false);
-          console.log(props);
+          // console.log(props);props: any
         },
         // beforeUnmount: (props: any) => {
         //   console.log(props);

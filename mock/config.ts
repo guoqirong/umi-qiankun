@@ -11,11 +11,11 @@ export default {
         entry: 'https://guoqirong.github.io/umi-cnode/',
         activeRule: '/#/umi-cnode', // hash路由需配置
       },
-      {
-        name: 'react-cnode',
-        entry: 'https://guoqirong.github.io/react-cnode/',
-        activeRule: '/#/react-cnode', // hash路由需配置
-      },
+      // {  // 非根目录部署路由存在问题
+      //   name: 'react-cnode',
+      //   entry: 'https://guoqirong.github.io/react-cnode/',
+      //   activeRule: '/#/react-cnode', // hash路由需配置
+      // },
       {
         name: 'vue2-cnode',
         entry: 'https://guoqirong.github.io/vue2-cnode/',
