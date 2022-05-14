@@ -14,6 +14,11 @@
       "name": "vue2-cnode",
       "entry": "https://guoqirong.github.io/vue2-cnode/",
       "activeRule": "/#/vue2-cnode"
+    },
+    {
+      "name": "vue-vite-cnode",
+      "entry": "https://guoqirong.github.io/vue-vite-cnode/",
+      "activeRule": "/#/vue-vite-cnode"
     }
   ],
   "routes": [
@@ -28,6 +33,10 @@
     {
       "path": "/vue2-cnode",
       "microApp": "vue2-cnode"
+    },
+    {
+      "path": "/vue-vite-cnode",
+      "microApp": "vue-vite-cnode"
     }
   ]
 }

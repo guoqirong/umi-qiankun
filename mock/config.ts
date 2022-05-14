@@ -21,6 +21,11 @@ export default {
         entry: 'https://guoqirong.github.io/vue2-cnode/',
         activeRule: '/#/vue2-cnode', // hash路由需配置
       },
+      {
+        name: 'vue-vite-cnode',
+        entry: 'https://guoqirong.github.io/vue-vite-cnode/',
+        activeRule: '/#/vue-vite-cnode', // hash路由需配置
+      },
     ],
     routes: [
       {
