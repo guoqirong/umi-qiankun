@@ -2,14 +2,41 @@
   "apps": [
     {
       "name": "vue3-cnode",
-      "entry": "http://localhost:8080",
+      "entry": "https://guoqirong.github.io/vue3-cnode/",
       "activeRule": "/#/vue3-cnode"
+    },
+    {
+      "name": "umi-cnode",
+      "entry": "https://guoqirong.github.io/umi-cnode/",
+      "activeRule": "/#/umi-cnode"
+    },
+    {
+      "name": "vue2-cnode",
+      "entry": "https://guoqirong.github.io/vue2-cnode/",
+      "activeRule": "/#/vue2-cnode"
+    },
+    {
+      "name": "vue-vite-cnode",
+      "entry": "https://guoqirong.github.io/vue-vite-cnode/",
+      "activeRule": "/#/vue-vite-cnode"
     }
   ],
   "routes": [
     {
       "path": "/vue3-cnode",
       "microApp": "vue3-cnode"
+    },
+    {
+      "path": "/umi-cnode",
+      "microApp": "umi-cnode"
+    },
+    {
+      "path": "/vue2-cnode",
+      "microApp": "vue2-cnode"
+    },
+    {
+      "path": "/vue-vite-cnode",
+      "microApp": "vue-vite-cnode"
     }
   ]
 }

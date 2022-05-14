@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <% if (process.env.NODE_ENV === 'production') { %>
+      <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'sha256-YM8uI2F+VfHULiDF1T+UCYmPwssvvWleyz5k2gtmTQo=' 'sha256-hxyk+hEQp3z7q3FI7F1vZLjagU+8up3cNC/1VSo4dqI='; object-src 'none'; child-src https:">
+    <% } %>
+  </head>
+  <body>
+  </body>
+</html>

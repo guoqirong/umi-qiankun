@@ -17,7 +17,7 @@ export default defineConfig({
       to: 'config.json',
     },
   ],
-  publicPath: process.env.NODE_ENV === 'dev' ? '/umi-qiankun/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/umi-qiankun/' : '/',
   qiankun: {
     master: {
       // 注册子应用信息
